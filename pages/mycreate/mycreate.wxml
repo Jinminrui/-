@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="weui-panel__hd">活动列表</view>
+  <view class="weui-panel__bd">
+    <block wx:if="{{diaryList.length>0}}">
+      <navigator class="weui-media-box weui-media-box_text" wx:for="{{diaryList}}" wx:key="diaryItem" url="">
+        <view class="weui-media-box__title weui-media-box__title_in-text">
+          活动名称：{{item.title}}</view>
+        <view class="weui-media-box__desc">活动内容：{{item.content}}</view>
+        <view class="weui-media-box__info">活动创建者：{{userInfo.nickName}}</view>
+        <view class="weui-media-box__info">
+          <view class="weui-media-box__info__meta ">活动地点：{{item.location}}</view>
+          <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">活动时间：{{item.time}}</view>
+          <view class="weui-media-box__info__meta weui-media-box__info__operate">
+            <icon type="cancel" size="16"></icon>
+            <text class="del" catchtap="deleteDiary" data-id="{{item.objectId}}">删除</text>
+            <icon type="success" size="16"></icon>
+            <text catchtap="toModifyDiary" data-id="{{item.objectId}}" data-content="{{item.content}}" data-title="{{item.title}}">编辑</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

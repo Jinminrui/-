@@ -1,0 +1,24 @@
+<!--pages/mine/mine.wxml-->
+<view class = "container1">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <image src="" class="account-bg">
+    </image>
+  </view>
+
+  <view class = "separate"></view>
+
+  <view class = "line"></view>
+
+  <view class = "navs">
+    <block wx:for-items ="{{myItems}}" wx:key = "name">
+      <view class = "nav-item" catchtap="{{item.toNext}}" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class = "line"></view>
+</view>

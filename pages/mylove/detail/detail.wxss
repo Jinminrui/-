@@ -1,0 +1,24 @@
+.selection{
+  border-bottom: 3px solid #ddd;
+}
+.swiper{
+  width: 100%;
+  height: 450rpx;
+}
+
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+.panel{
+  border-bottom: 1px solid #999;
+}
+.text-box{
+  width: 100%;
+  height: 10px;
+}
+.text-box text{
+  font-size: 10px;
+  color: #999;
+  padding: 2px;
+}

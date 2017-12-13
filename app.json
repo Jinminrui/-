@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/create/create",
+    "pages/create/detail/detail",
+    "pages/mycreate/mycreate",
+    "pages/mylove/mylove",
+    "pages/mylove/detail/detail",
+    "pages/running/running",
+    "pages/football/football",
+    "pages/basketball/basketball",
+    "pages/others/others"
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#7FFF00",
+    "navigationBarTitleText": "心动",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":"false"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index2.png"
+      }, 
+      {
+      "pagePath": "pages/create/create",
+      "text": "创建",
+      "iconPath": "images/create.png",
+      "selectedIconPath": "images/create2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mypage.png",
+        "selectedIconPath": "images/mypage2.png"
+      }
+     
+    ]
+  }
+}

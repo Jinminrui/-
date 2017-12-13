@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="selection">
+    <swiper class='swiper' indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100%" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='selection'>
+    <view class="navs">
+      <block wx:for-items="{{sportItems}}" wx:key="name">
+        <view class="nav-item"  data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+          <image src="{{item.imageurl}}" class="nav-image" />
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="line"> </view>
+
+
+
+  <view class='selection'>
+
+    <view class='header'>
+      <text>热门</text>
+    </view>
+    <navigator class='list-item' wx:for="{{diaryList}}" wx:key="diaryItem" url='/pages/index/detail/detail?objectId={{item.objectId}}'>
+      <view class='list-item-image'>
+        <image src="../../images/10.jpg" />
+      </view>
+
+      <view class='list-item-text'>
+        <view class='list-item-text-title'>
+          <text>活动名称：{{item.title}}</text>
+        </view>
+
+        <view class='list-item-text-content'>
+          <image src='../../images/location.png'></image>
+          <text>活动时间：{{item.time}}</text>
+        </view>
+
+
+        <view class='list-item-text-content'>
+          <image src='../../images/time.png'></image>
+          <text>活动地点：{{item.location}}</text>
+        </view>
+      </view>
+    </navigator>
+
+  </view>
+
+</view>

@@ -1,0 +1,16 @@
+<view class="weui-panel__hd">活动列表</view>
+<view class="weui-panel__bd">
+  <block >
+    <navigator class="weui-media-box weui-media-box_text"url="/pages/mylove/detail/detail">
+      <view class="weui-media-box__title weui-media-box__title_in-text">
+        活动名称：校园马拉松</view>
+      <view class="weui-media-box__desc">活动内容：环校园迷你马拉松比赛</view>
+      <view class="weui-media-box__info">活动创建者：Keen King</view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta ">活动地点：南京信息工程大学</view>
+        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">活动时间：2017.12.28</view>
+
+      </view>
+    </navigator>
+  </block>
+</view>

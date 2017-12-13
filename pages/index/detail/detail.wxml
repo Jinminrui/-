@@ -1,0 +1,24 @@
+<view class="page">
+  <view class=".swiper">
+    <image src='/images/4.jpg'></image>
+  </view>
+
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">活动名称：{{rows.title}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            活动详情：{{rows.content}}
+          </view>
+          <view class="weui-article__h3">活动地点：{{rows.location}} </view>
+          <view class="weui-article__h3">活动时间：{{rows.time}} </view>
+          
+          <view class="weui-article__h3">创建时间：{{rows.createdAt}} </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button type="primary"bindtap="showok">加入</button>
+</view>
